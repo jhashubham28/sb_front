@@ -41,8 +41,9 @@ h2 {
     left: 78px!important
 }
 .team_columns_item_image {
-    padding-top: 60px;
-    padding-bottom: 25px
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px
 }
 .team_columns_item_image img {
     width: 100%;
@@ -275,12 +276,16 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
     border: 1px solid #ccc;  
   }
 }
+.carousel-control
+    {
+
+    }
 /*_______________________carousel control---------------------------*/
 .carousel-control {
 
   text-shadow: none;
   display: inline-block;
-  background: #5f5f5f;
+  background: #2cb2bc;
   line-height: 36px!important;
   -moz-line-height: 36px!important;
   height: 40px;
@@ -288,6 +293,6 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
   top: 45%;
   opacity: inherit;
 }
-.carousel-control:hover {
-  background-color:#2cb2bc;
+ .carousel-control:hover {
+  background-color:#5f5f5f;
 }
