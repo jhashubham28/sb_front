@@ -7,4 +7,4 @@ app.get('/',function(req, res){
 	res.redirect('/');
 });
 app.listen(8080,'localhost');
-console.log("My app is listening on 8080");
+console.log("My app is listening on 8080 ok");
