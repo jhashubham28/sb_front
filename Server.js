@@ -1,10 +1,10 @@
-var express=require('express');
-var app=express();
 
-app.use(express.static("dailynews"));
+var express = require('express');
+var app = express(); 						// create our app w/ express
+var port = process.env.PORT || 8080; 				// set the port
+// routes ======================================================================
+require('./app/routes.js')(app);
 
-app.get('/',function(req, res){
-	res.redirect('/');
-});
-app.listen(8080,'localhost');
-console.log("My app is listening on 8080 ok");
+// listen (start app with node server.js) ======================================
+app.listen(port);
+console.log("App listening on port " + port);
