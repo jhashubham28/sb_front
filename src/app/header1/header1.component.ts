@@ -10,7 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class Header1Component {
 	 
   menus=['Login','Register','Subscribe'];
-  menus1=['Home','Matches','Players','Tournaments','Contact Us','About Us','Admin'];
+  menus1=['Home','Matches','Players','Teams','Tournaments','Contact Us','About Us'];
    constructor(private translate: TranslateService) {
     translate.setDefaultLang('en');
   }

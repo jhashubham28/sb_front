@@ -36,6 +36,9 @@ import { GoogleLoginProvider, FacebookLoginProvider, LinkedInLoginProvider} from
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TeamsComponent } from './teams/teams.component';
+import { AddTeamsComponent } from './add-teams/add-teams.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -94,6 +97,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     RegisterComponent,
     LoginComponent,
     AdminDashboardComponent,
+    TeamsComponent,
+    AddTeamsComponent,
+    PageNotFoundComponent,
     ],
   imports: [
     BrowserModule,

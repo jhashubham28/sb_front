@@ -11,6 +11,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import {RegisterComponent} from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import {AdminDashboardComponent} from './admin-dashboard/admin-dashboard.component';
+import {TeamsComponent} from './teams/teams.component';
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+
 
 
 
@@ -20,12 +23,14 @@ const routes: Routes = [{ path: '',component: MainSectionComponent},
 						{ path: 'Home',component: MainSectionComponent},
 						{ path: 'Matches',component: MatchesComponent},
 						{path: 'Players',component: PlayersComponent},
+						{path: 'Teams',component: TeamsComponent},
 						{path: 'Tournaments',component: TournamentsComponent},
 						{path: 'Contact Us',component: ContactUsComponent},
 						{path: 'About Us',component:AboutUsComponent},
 						{path: 'Register',component:RegisterComponent},
 						{path: 'Login',component:LoginComponent},
-						{path: 'Admin',component:AdminDashboardComponent},];
+						{path: 'Admin',component:AdminDashboardComponent},
+						{path: '**',component:PageNotFoundComponent},];
 
 
 @NgModule({
