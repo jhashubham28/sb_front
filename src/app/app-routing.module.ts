@@ -31,7 +31,7 @@ const routes: Routes = [{ path: '',component: MainSectionComponent},
 						{path: 'Register',component:RegisterComponent},
 						{path: 'Login',component:LoginComponent},
 						{path: 'Admin',component:AdminDashboardComponent},
-						{path: 'Teams/add-teams',component:AddTeamsComponent},//Add teams
+						{path: 'Teams/add-teams',component:AddTeamsComponent},
 						{path: '**',component:PageNotFoundComponent},];
 
 
