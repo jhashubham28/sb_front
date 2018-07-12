@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import {AdminDashboardComponent} from './admin-dashboard/admin-dashboard.component';
 import {TeamsComponent} from './teams/teams.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import {AddTeamsComponent} from './add-teams/add-teams.component';
 
 
 
@@ -30,6 +31,7 @@ const routes: Routes = [{ path: '',component: MainSectionComponent},
 						{path: 'Register',component:RegisterComponent},
 						{path: 'Login',component:LoginComponent},
 						{path: 'Admin',component:AdminDashboardComponent},
+						{path: 'Teams/add-teams',component:AddTeamsComponent},
 						{path: '**',component:PageNotFoundComponent},];
 
 

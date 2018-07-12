@@ -7,7 +7,7 @@
     <div class="col-md-4">
       <div class="form">
         <h1>Registration Form</h1>
-        <form #registrationForm="ngForm" (ngSubmit)="onSubmit(registrationForm.value)">
+        <form #RegisterComponent="ngForm" (ngSubmit)="onSubmit(RegisterComponent.value)">
           <div class='form-group'>
             <label for="name">Name</label>
             <input type="text" id="name" required placeholder="Johnny Bravo" class="form-control" name="name" ngControl="name" pattern="[a-zA-Z ]+$" ngModel required minlength="4" #name="ngModel">
